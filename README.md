@@ -1,3 +1,63 @@
+# CSC 122 Gradebook – Quick User Guide
+## Overview
+
+This C++ program is a menu-driven gradebook for CSC 122. It allows you to:
+
+- Add students and assignments
+- Enter student grades
+- Generate gradebook and assignment reports
+- Save and load data from a file (gradebook.txt)
+- Display reports in the console or save them to a file
+
+Student IDs are used as unique identifiers, so students with the same name are handled correctly.
+
+## Setup
+Folder Structure:
+
+root/main.cpp
+
+root/src/gradebook.hpp
+
+root/src/gradebook.cpp
+
+root/tests/gradebook_test.cpp
+    
+Compile:
+g++ -std=c++17 main.cpp src/gradebook.cpp -o gradebook
+
+Run:
+./gradebook
+
+## Menu Options
+
+1. Gradebook Report
+2. Assignment Report
+3. Add Student
+4. Add Assignment
+5. Enter Grade
+6. Exit
+
+Follow the prompts for each option.
+
+Reports can be displayed in console or saved to a file (you will be asked for the filename).
+
+## File Storage
+- All data is saved to gradebook.txt on exit.
+- Existing data is loaded automatically when the program starts.
+- Grades are stored as optional values, so ungraded assignments appear as none.
+
+## Example Workflow
+- Add a student: Full name + Student ID
+- Add an assignment: Name + Total points
+- Enter grades using Student ID
+- Generate reports (console or file)
+- Exit to save all data
+
+## Notes
+Student IDs ensure uniqueness.
+- Invalid entries (non-existent student or assignment) are ignored.
+- Empty gradebook reports still show headers and are safe to view.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # You Get an A (C++)
 
 You can find the instructions for this lab at [More Than Equations][more-than-equations]. Create a new repository on GitHub to house your code. Be sure to make the repository public so that I can view and grade it.
